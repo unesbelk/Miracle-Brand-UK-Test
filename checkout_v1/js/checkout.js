@@ -56,21 +56,21 @@ $("input[name='combo_mode']").change(function(e) {
 
 $(".checkout-submit-combo").click(function(e) {
 	setTimeout(function() {
-		console.log($(".checkout-combo-form .checkout-invalid-field").length);
-		if ($(".checkout-combo-form .checkout-invalid-field").length > 0) {
-			var new_position = $(".checkout-combo-form .checkout-invalid-field").offset();
-			$('html, body').stop().animate({ scrollTop: new_position.top - 15 }, 200);
-		}
-		else {
-				$(".checkout-submit-combo").addClass("submitting");
-				$("#overlay").css("opacity",0.50);
-			$(document).on("checkout_failed", (e)=> {
-				$(".checkout-submit-combo").removeClass("submitting");
-				$("#overlay").css("opacity",1);
+		// console.log($(".checkout-combo-form .checkout-invalid-field").length);
+		// if ($(".checkout-combo-form .checkout-invalid-field").length > 0) {
+		// 	var new_position = $(".checkout-combo-form .checkout-invalid-field").offset();
+		// 	$('html, body').stop().animate({ scrollTop: new_position.top - 15 }, 200);
+		// }
+		// else {
+		// 		$(".checkout-submit-combo").addClass("submitting");
+		// 		$("#overlay").css("opacity",0.50);
+		// 	$(document).on("checkout_failed", (e)=> {
+		// 		$(".checkout-submit-combo").removeClass("submitting");
+		// 		$("#overlay").css("opacity",1);
 
-			});
+		// 	});
 			
-		}
+		// }
 	}, 100);
 });
 

@@ -1004,7 +1004,7 @@ div#stripe-cc-number {
   border-color: #ff8ba7;
   border-radius: 20px;
   background-color: #d6d6d6;
-  background-image: url('../images/black-circle.svg');
+  background-image: url('/checkout_v1/images/black-circle.svg');
   background-position: 3px 50%;
   background-size: 20px 20px;
   background-repeat: no-repeat;
@@ -1017,7 +1017,7 @@ div#stripe-cc-number {
   margin-left: 0px;
   border-color: #8bc794;
   background-color: #000;
-  background-image: url('../images/black-circle.svg');
+  background-image: url('/checkout_v1/images/black-circle.svg');
   background-position: 28px 50%;
   background-size: 20px;
   -webkit-transition: background-color 200ms ease, background-position 200ms ease;
@@ -2083,7 +2083,7 @@ div#stripe-cc-number {
   justify-content: center;
   border-radius: 4px;
   background-color: #ffab41;
-  background-image: url('../images/paypal-btn.svg');
+  background-image: url('/checkout_v1/images/paypal-btn.svg');
   background-position: 50% 50%;
   background-size: auto;
   background-repeat: no-repeat;
@@ -3365,14 +3365,14 @@ div#stripe-cc-number {
 
 @font-face {
   font-family: 'Fa brands 400';
-  src: url('../fonts/fa-brands-400.woff2') format('woff2');
+  src: url('/checkout_v1/fonts/fa-brands-400.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Fa solid 900';
-  src: url('../fonts/fa-solid-900.woff2') format('woff2');
+  src: url('/checkout_v1/fonts/fa-solid-900.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

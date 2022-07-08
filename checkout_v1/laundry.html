@@ -27,13 +27,14 @@
     </script>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
-  <script type="text/javascript" src="https://cdn.miracleuk.rtccart.io/js/cart_loader.js"></script>
-  <script type="text/javascript" async="" src="https://try.miraclebrand.co.uk/pixel.js"></script>
+  <!--<script type="text/javascript" src="https://cdn.miracleuk.rtccart.io/js/cart_loader.js"></script>-->
+  <script type="text/javascript" src="/cart_loader+.js"></script>
+  <script type="text/javascript" async="" src="/pixel.js"></script>
   <meta content="api.miracleuk.rtccart.io" name="checkout-api-endpoint">
   <meta content="" name="checkout-default-variant-id">
   <meta content="" name="checkout-default-addons">
   <meta content="GB" name="checkout-default-shipping-zone">
-  <meta content="https://try.miraclebrand.co.uk/receipt/" name="checkout-next-url">
+  <meta content="/receipt/" name="checkout-next-url">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
   <meta content="try_C1" name="checkout-funnel-name">
 
@@ -46,10 +47,10 @@
         ];
         for (let i = 0; i < targetVariants.length; i++) {
           if (cart.localCart.hasVariant(targetVariants[i])) {
-            return 'https://try.miraclebrand.co.uk/receipt/';
+            return '/receipt/';
           }
         }
-        return 'https://try.miraclebrand.co.uk/receipt/';
+        return '/receipt/';
       });
     </script>
   <link rel="stylesheet" type="text/css" href="css/checkout.css">
@@ -61,7 +62,7 @@
       <div class="rtc-left">
         <div class="rtc-left-container">
           <div class="rtc-header">
-            <div class="checkout-head"><img src="images/logo.svg" loading="lazy" alt="" class="javy-logo"><img src="images/secure.svg" loading="lazy" alt="" class="country-logo"></div>
+            <div class="checkout-head"><a href="/laundry/confirmation.html"><img src="images/logo.svg" loading="lazy" alt="" class="javy-logo"><a/><img src="images/secure.svg" loading="lazy" alt="" class="country-logo"></div>
             <div class="order-summary-tablet-mobile">
               <div class="accordation-holder">
                 <div data-w-id="5a3ecc4a-075c-c404-8314-b7b495d47008" class="accordion__title-2">
@@ -344,7 +345,7 @@
                       </div>
                     </div>
                     <div class="w-embed"><input type="hidden" name="combo_mode" value="credit"></div>
-                    <a href="#" class="checkout-submit-combo w-inline-block">
+                    <a href="/laundry/confirmation.html" class="checkout-submit-combo w-inline-block">
                       <div class="button_rtc">
                         <div class="loader-wrapper">
                           <div class="loader"></div>
